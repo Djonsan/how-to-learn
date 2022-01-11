@@ -13,13 +13,75 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  display: flex;
+  position: relative;
   /* выше установили ограничения для секции */
+}
+
+.logo_place_header {
+  width: 183px;
+  height: 32px;
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  background-image: url(../images/logo_place_header.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 2;
+  /* logo готов */
+}
+
+.header__title {
+  width: 730px;
+  font-size: 102px;
+  line-height: 1;
+  font-weight: bold;
+  align-self: center;
+  position: relative;
+  left: 64px;
+  margin: 0px;
+  z-index: 5;
+  /* title готов */
+}
+
+.header__subtitle {
+  position: absolute;
+  left: 64px;
+  bottom: 30px;
+  margin: 0px;
+  width: 388px;
+  font-size: 18px;
+  line-height: 25px;/*
+  font-weight: normal;
+  /* subtitle готов */
+}
+
+.header__link {
+  text-decoration: none;
+  color: #2f80ed;
+  /* link готов */
+}
+
+.header__main-illustration {
+  width: 765px;
+  height: 608px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  /* main-illustration готов */
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
+  position: absolute;
+  top: 64px;
+  right: 0;
   height: 568px;
   width: 568px;
+  background-color: #2f80ed;
+  z-index: -1;
+  /* header__square-pic готов */
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -29,3 +91,4 @@
   margin-right: 0;
   margin-top: 80px;
 }
+
