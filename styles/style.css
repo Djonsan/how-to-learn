@@ -6,7 +6,7 @@
   /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 .header {
@@ -88,7 +88,7 @@
   display: flex;
   justify-content: center;
   padding-top: 100px;
-  /* description готова */
+  /* description готов */
 }
 
 .two-columns {
@@ -96,7 +96,7 @@
   justify-content: space-between;
   width: 80%;
   margin: 0 auto;
-  /* two-columns готова */
+  /* two-columns готов */
 }
 
 .two-columns__brief {
@@ -106,7 +106,7 @@
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-  /* two-columns__brief готова */
+  /* two-columns__brief готов */
 }
 
 .two-columns__main-text {
@@ -117,17 +117,75 @@
   font-weight: normal;
   width: 80%;
   min-width: 784px;
-  /* two-columns__main-text готова */
+  /* two-columns__main-text готов */
 }
 
 .two-columns__paragraph {
   margin: 0 0 30px;
-  /* two-columns__paragraph готова */
+  /* two-columns__paragraph готов */
 }
 
 .two-columns__span-accent {
   font-weight: bold;
-  /* two-columns__span-accent готова */
+  /* two-columns__span-accent готов */
+}
+
+.digits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+  /* digits готов */
+}
+
+.section-title {
+  width: 60%;
+  margin: 0 0 20px;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  /* section-title готов */
+}
+
+.section-subtitle {
+  width: 60%;
+  margin: 0px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+  /* section-subtitle готов */
+}
+
+.table {
+  max-width: 1100px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  /* table готов */
+}
+
+.table__cell {
+  width: 250px;
+  margin-top: 60px;
+  /* table__cell готов */
+}
+
+.table__heading {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0px;
+  /* table__heading готов */
+}
+
+.table__text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 20px 0 0;
+  /* table__text готов */
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -137,4 +195,3 @@
   margin-right: 0;
   margin-top: 80px;
 }
-
