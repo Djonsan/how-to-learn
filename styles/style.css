@@ -31,8 +31,7 @@
   top: 30px;
   left: 64px;
   background-image: url(../images/logo_place_header.svg);
-  z-index: 2;
-  /* logo готов */
+  z-index: 3;
 }
 
 .header__title {
@@ -43,8 +42,7 @@
   align-self: center;
   position: relative;
   margin: 0 0 0 64px;
-  z-index: 5;
-  /* title готов */
+  z-index: 3;
 }
 
 .header__subtitle {
@@ -56,12 +54,11 @@
   font-size: 18px;
   line-height: 25px;
   font-weight: normal;
-  /* subtitle готов */
+  z-index: 3;
 }
 
 .header__link {
   color: #2f80ed;
-  /* header__link готов */
 }
 
 .link {
@@ -75,7 +72,6 @@
   right: 0;
   bottom: 0;
   z-index: 2;
-  /* main-illustration готов */
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -87,14 +83,12 @@
   width: 568px;
   background-color: #2f80ed;
   z-index: 1;
-  /* header__square-pic готов */
 }
 
 .description {
   display: flex;
   justify-content: center;
   padding-top: 100px;
-  /* description готов */
 }
 
 .two-columns {
@@ -102,7 +96,6 @@
   justify-content: space-between;
   width: 80%;
   margin: 0 auto;
-  /* two-columns готов */
 }
 
 .two-columns__brief {
@@ -112,7 +105,6 @@
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-  /* two-columns__brief готов */
 }
 
 .two-columns__main-text {
@@ -123,17 +115,18 @@
   font-weight: normal;
   width: 80%;
   min-width: 784px;
-  /* two-columns__main-text готов */
 }
 
 .two-columns__paragraph {
   margin: 0 0 30px;
-  /* two-columns__paragraph готов */
+}
+
+.two-columns__paragraph:last-child {
+  margin: 0;
 }
 
 .two-columns__span-accent {
   font-weight: bold;
-  /* two-columns__span-accent готов */
 }
 
 .digits {
@@ -141,7 +134,6 @@
   flex-direction: column;
   align-items: center;
   padding: 100px 0;
-  /* digits готов */
 }
 
 .section-title {
@@ -151,7 +143,6 @@
   font-size: 60px;
   font-weight: bold;
   text-align: center;
-  /* section-title готов */
 }
 
 .section-subtitle {
@@ -161,7 +152,6 @@
   font-size: 24px;
   font-weight: normal;
   text-align: center;
-  /* section-subtitle готов */
 }
 
 .table {
@@ -172,13 +162,11 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  /* table готов */
 }
 
 .table__cell {
   width: 250px;
   margin-top: 60px;
-  /* table__cell готов */
 }
 
 .table__heading {
@@ -186,7 +174,6 @@
   font-size: 24px;
   font-weight: bold;
   margin: 0px;
-  /* table__heading готов */
 }
 
 .table__text {
@@ -194,11 +181,10 @@
   font-size: 18px;
   font-weight: normal;
   margin: 20px 0 0;
-  /* table__text готов */
 }
 
 .feynman {
-  height: 890px;
+  min-height: 890px;
   background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
@@ -210,7 +196,6 @@
   justify-content: flex-start;
   position: relative;
   padding-top: 100px;
-  /* feynman готов */
 }
 
 .feynman__title {
@@ -220,7 +205,6 @@
   font-weight: bold;
   text-align: center;
   margin: 0px;
-  /* feynman__title готов */
 }
 
 .feynman__subtitle {
@@ -229,7 +213,7 @@
   font-weight: normal;
   text-align: center;
   padding: 70px 0 0;
-  /* feynman__subtitle готов */
+  margin: 0;
 }
 
 .feynman__link {
@@ -241,7 +225,6 @@
   font-weight: normal;
   text-decoration: none;
   color: #2f80ed;
-  /* feynman__link готов */
 }
 
 .kaufman {
@@ -253,7 +236,6 @@
   position: relative;
   padding-top: 90px;
   padding-bottom: 90px;
-  /* kaufman готов */
 }
 
 .kaufman__triangle {
@@ -278,18 +260,15 @@
 .section-title_theme_dark {
   color: white;
   z-index: 1;
-  /* section-title_theme_dark готов */
 }
 
 .section-subtitle_theme_dark {
   color: white;
   z-index: 1;
-  /* section-subtitle_theme_dark готов */
 }
 
 .table_theme_dark {
   z-index: 1;
-  /* table готов */
 }
 
 .footer {
@@ -301,34 +280,23 @@
   display: flex;
   justify-content: center;
   color: #ffffff;
-  /* footer готов */
+  box-sizing: border-box;
 }
 
 .footer__columns {
   width: 90%;
   display: flex;
   justify-content: space-between;
-  /* footer__columns готов */
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer__column_content_copyright {
-  display: flex;
-  flex-direction: column;
   flex-basis: 711px;
   justify-content: space-between;
-  /* footer__column_content_copyright готов */
-}
-
-.footer__column_content_info {
-  display: flex;
-  flex-direction: column;
-  /* footer__column_content_info готов */
-}
-
-.footer__column_content_social {
-  display: flex;
-  flex-direction: column;
-  /* footer__column_content_social готов */
 }
 
 .footer__author {
@@ -337,14 +305,12 @@
   font-weight: normal;
   margin: 18px 0;
   align-self: flex-start;
-  /* footer__author готов */
 }
 
 .footer__social-icon {
   width: 16px;
   height: 16px;
   padding-right: 10px;
-  /* footer__social-icon готов */
 }
 
 .footer__column-heading {
@@ -353,7 +319,6 @@
   font-weight: bold;
   margin: 0 0 20px;
   padding: 0;
-  /* footer__column-heading готов */
 }
 
 .footer__column-links {
@@ -363,16 +328,13 @@
   margin: 0 0 16px;
   padding: 0;
   list-style: none;
-  /* footer__column-links готов */
 }
 
 .footer__link {
   color: #ffffff;
-  /* footer__link готов */
 }
 
 .logo_place_footer {
   height: 35px;
   background-image: url(../images/logo_place_footer.svg);
-  /* logo_place_footer готов */
 }
