@@ -1,7 +1,16 @@
 .video__iframe {
   width: 515px;
   height: 316px;
+  border: none;
   margin: 0;
-  position: relative;
-  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.video__iframe:first-child {
+  margin-right: 10px;
+}
+
+.video__iframe:last-child {
+  margin-left: 10px;
 }
